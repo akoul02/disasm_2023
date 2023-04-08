@@ -1,0 +1,307 @@
+[INFO]: Starting disassembly of "othercore.bin".
+Disassembly of 608 (0x260) bytes:
+
+00000000: B580     push {r7}
+00000002: B084     sub sp, #0x10
+00000004: AF00     add r7, sp, #0x0
+00000006: 2318     mov r3, #0x18
+00000008: 18FB     add r3, r7, r3
+0000000A: 607B     str r3, [r7, #0x4]
+0000000C: 46C0     mov r8, r8
+0000000E: 4B3A     ldr r3, [pc, #0xE8]
+00000010: 681B     ldr r3, [r3, #0x0]
+00000012: 2203     mov r2, #0x3
+00000014: 4013     and r3, r2
+00000016: 2B03     cmp r3, #0x3
+00000018: D1F9     bne #0xFFFFFFF6
+0000001A: 4B38     ldr r3, [pc, #0xE0]
+0000001C: 4A38     ldr r2, [pc, #0xE0]
+0000001E: 681B     ldr r3, [r3, #0x0]
+00000020: 6013     str r3, [r2, #0x0]
+00000022: 60FB     str r3, [r7, #0xC]
+00000024: 4B36     ldr r3, [pc, #0xD8]
+00000026: 2263     mov r2, #0x63
+00000028: 601A     str r2, [r3, #0x0]
+0000002A: 68FB     ldr r3, [r7, #0xC]
+0000002C: 3301     add r3, #0x1
+0000002E: 68FA     ldr r2, [r7, #0xC]
+00000030: 7812     ldrb r2, [r2, #0x0]
+00000032: 701A     strb r2, [r3, #0x0]
+00000034: 2308     mov r3, #0x8
+00000036: 18FA     add r2, r7, r3
+00000038: 1D3B     add r3, r7, #0x4
+0000003A: 469C     mov r12, r3
+0000003C: 210A     mov r1, #0xA
+0000003E: 200B     mov r0, #0xB
+00000040: F868F000 bl #0xD4
+00000044: 0002     lsl r2, r0, #0x0
+00000046: 68FB     ldr r3, [r7, #0xC]
+00000048: 3302     add r3, #0x2
+0000004A: B2D2     n/a
+0000004C: 701A     strb r2, [r3, #0x0]
+0000004E: 68BA     ldr r2, [r7, #0x8]
+00000050: 68FB     ldr r3, [r7, #0xC]
+00000052: 3303     add r3, #0x3
+00000054: B2D2     n/a
+00000056: 701A     strb r2, [r3, #0x0]
+00000058: 4B2A     ldr r3, [pc, #0xA8]
+0000005A: 2280     mov r2, #0x80
+0000005C: 0252     lsl r2, r2, #0x9
+0000005E: 601A     str r2, [r3, #0x0]
+00000060: 4B29     ldr r3, [pc, #0xA4]
+00000062: 2280     mov r2, #0x80
+00000064: 0292     lsl r2, r2, #0xA
+00000066: 601A     str r2, [r3, #0x0]
+00000068: 2300     mov r3, #0x0
+0000006A: 60BB     str r3, [r7, #0x8]
+0000006C: E00B     b #0x1A
+0000006E: 46C0     mov r8, r8
+00000070: 4B26     ldr r3, [pc, #0x98]
+00000072: 681B     ldr r3, [r3, #0x0]
+00000074: 2202     mov r2, #0x2
+00000076: 4013     and r3, r2
+00000078: D0FA     beq #0xFFFFFFF8
+0000007A: 4B25     ldr r3, [pc, #0x94]
+0000007C: 2201     mov r2, #0x1
+0000007E: 601A     str r2, [r3, #0x0]
+00000080: 68BB     ldr r3, [r7, #0x8]
+00000082: 3301     add r3, #0x1
+00000084: 60BB     str r3, [r7, #0x8]
+00000086: 68BA     ldr r2, [r7, #0x8]
+00000088: 23B4     mov r3, #0xB4
+0000008A: 005B     lsl r3, r3, #0x1
+0000008C: 429A     cmp r2, r3
+0000008E: DBEE     blt #0xFFFFFFE0
+00000090: 4B1C     ldr r3, [pc, #0x70]
+00000092: 2280     mov r2, #0x80
+00000094: 0292     lsl r2, r2, #0xA
+00000096: 601A     str r2, [r3, #0x0]
+00000098: 46C0     mov r8, r8
+0000009A: 4B1C     ldr r3, [pc, #0x70]
+0000009C: 681B     ldr r3, [r3, #0x0]
+0000009E: 2202     mov r2, #0x2
+000000A0: 4013     and r3, r2
+000000A2: D0FA     beq #0xFFFFFFF8
+000000A4: 4B1A     ldr r3, [pc, #0x68]
+000000A6: 2281     mov r2, #0x81
+000000A8: 601A     str r2, [r3, #0x0]
+000000AA: 46C0     mov r8, r8
+000000AC: 4B17     ldr r3, [pc, #0x5C]
+000000AE: 681B     ldr r3, [r3, #0x0]
+000000B0: 2202     mov r2, #0x2
+000000B2: 4013     and r3, r2
+000000B4: D0FA     beq #0xFFFFFFF8
+000000B6: 68FB     ldr r3, [r7, #0xC]
+000000B8: 781A     ldrb r2, [r3, #0x0]
+000000BA: 4B15     ldr r3, [pc, #0x54]
+000000BC: 601A     str r2, [r3, #0x0]
+000000BE: E002     b #0x8
+000000C0: 4B13     ldr r3, [pc, #0x4C]
+000000C2: 681B     ldr r3, [r3, #0x0]
+000000C4: 60BB     str r3, [r7, #0x8]
+000000C6: 4B11     ldr r3, [pc, #0x44]
+000000C8: 681B     ldr r3, [r3, #0x0]
+000000CA: 2204     mov r2, #0x4
+000000CC: 4013     and r3, r2
+000000CE: 2B04     cmp r3, #0x4
+000000D0: D0F6     beq #0xFFFFFFF0
+000000D2: 46C0     mov r8, r8
+000000D4: 4B0D     ldr r3, [pc, #0x34]
+000000D6: 681B     ldr r3, [r3, #0x0]
+000000D8: 2210     mov r2, #0x10
+000000DA: 4013     and r3, r2
+000000DC: 2B10     cmp r3, #0x10
+000000DE: D0F9     beq #0xFFFFFFF6
+000000E0: E002     b #0x8
+000000E2: 4B0B     ldr r3, [pc, #0x2C]
+000000E4: 681B     ldr r3, [r3, #0x0]
+000000E6: 60BB     str r3, [r7, #0x8]
+000000E8: 4B08     ldr r3, [pc, #0x20]
+000000EA: 681B     ldr r3, [r3, #0x0]
+000000EC: 2204     mov r2, #0x4
+000000EE: 4013     and r3, r2
+000000F0: 2B04     cmp r3, #0x4
+000000F2: D0F6     beq #0xFFFFFFF0
+000000F4: E796     b #0xFFFFFF30
+000000F6: 46C0     mov r8, r8
+000000F8: 0050     lsl r0, r2, #0x1
+000000FA: D000     beq #0x4
+000000FC: 0058     lsl r0, r3, #0x1
+000000FE: D000     beq #0x4
+00000100: 0054     lsl r4, r2, #0x1
+00000102: D000     beq #0x4
+00000104: 0018     lsl r0, r3, #0x0
+00000106: D000     beq #0x4
+00000108: 0014     lsl r4, r2, #0x0
+0000010A: D000     beq #0x4
+0000010C: C00C     stmia r0!, {r2,r3}
+0000010E: 4003     and r3, r0
+00000110: C008     stmia r0!, {r3}
+00000112: 4003     and r3, r0
+00000114: B580     push {r7}
+00000116: B084     sub sp, #0x10
+00000118: AF00     add r7, sp, #0x0
+0000011A: 60F8     str r0, [r7, #0xC]
+0000011C: 60B9     str r1, [r7, #0x8]
+0000011E: 607A     str r2, [r7, #0x4]
+00000120: 4663     mov r3, r12
+00000122: 603B     str r3, [r7, #0x0]
+00000124: 68FB     ldr r3, [r7, #0xC]
+00000126: 68B9     ldr r1, [r7, #0x8]
+00000128: 0018     lsl r0, r3, #0x0
+0000012A: F893F000 bl #0x12A
+0000012E: 000B     lsl r3, r1, #0x0
+00000130: 001A     lsl r2, r3, #0x0
+00000132: 687B     ldr r3, [r7, #0x4]
+00000134: 601A     str r2, [r3, #0x0]
+00000136: 68B9     ldr r1, [r7, #0x8]
+00000138: 68F8     ldr r0, [r7, #0xC]
+0000013A: F805F000 bl #0xE
+0000013E: 0003     lsl r3, r0, #0x0
+00000140: 0018     lsl r0, r3, #0x0
+00000142: 46BD     mov sp, r7
+00000144: B004     add sp, #0x10
+00000146: BD80     pop {r7}
+00000148: 2200     mov r2, #0x0
+0000014A: 0843     lsr r3, r0, #0x1
+0000014C: 428B     cmp r3, r1
+0000014E: D374     bcc #0xEC
+00000150: 0903     lsr r3, r0, #0x4
+00000152: 428B     cmp r3, r1
+00000154: D35F     bcc #0xC2
+00000156: 0A03     lsr r3, r0, #0x8
+00000158: 428B     cmp r3, r1
+0000015A: D344     bcc #0x8C
+0000015C: 0B03     lsr r3, r0, #0xC
+0000015E: 428B     cmp r3, r1
+00000160: D328     bcc #0x54
+00000162: 0C03     lsr r3, r0, #0x10
+00000164: 428B     cmp r3, r1
+00000166: D30D     bcc #0x1E
+00000168: 22FF     mov r2, #0xFF
+0000016A: 0209     lsl r1, r1, #0x8
+0000016C: BA12     n/a
+0000016E: 0C03     lsr r3, r0, #0x10
+00000170: 428B     cmp r3, r1
+00000172: D302     bcc #0x8
+00000174: 1212     asr r2, r2, #0x8
+00000176: 0209     lsl r1, r1, #0x8
+00000178: D065     beq #0xCE
+0000017A: 0B03     lsr r3, r0, #0xC
+0000017C: 428B     cmp r3, r1
+0000017E: D319     bcc #0x36
+00000180: E000     b #0x4
+00000182: 0A09     lsr r1, r1, #0x8
+00000184: 0BC3     lsr r3, r0, #0xF
+00000186: 428B     cmp r3, r1
+00000188: D301     bcc #0x6
+0000018A: 03CB     lsl r3, r1, #0xF
+0000018C: 1AC0     sub r0, r0, r3
+0000018E: 4152     adc r2, r2
+00000190: 0B83     lsr r3, r0, #0xE
+00000192: 428B     cmp r3, r1
+00000194: D301     bcc #0x6
+00000196: 038B     lsl r3, r1, #0xE
+00000198: 1AC0     sub r0, r0, r3
+0000019A: 4152     adc r2, r2
+0000019C: 0B43     lsr r3, r0, #0xD
+0000019E: 428B     cmp r3, r1
+000001A0: D301     bcc #0x6
+000001A2: 034B     lsl r3, r1, #0xD
+000001A4: 1AC0     sub r0, r0, r3
+000001A6: 4152     adc r2, r2
+000001A8: 0B03     lsr r3, r0, #0xC
+000001AA: 428B     cmp r3, r1
+000001AC: D301     bcc #0x6
+000001AE: 030B     lsl r3, r1, #0xC
+000001B0: 1AC0     sub r0, r0, r3
+000001B2: 4152     adc r2, r2
+000001B4: 0AC3     lsr r3, r0, #0xB
+000001B6: 428B     cmp r3, r1
+000001B8: D301     bcc #0x6
+000001BA: 02CB     lsl r3, r1, #0xB
+000001BC: 1AC0     sub r0, r0, r3
+000001BE: 4152     adc r2, r2
+000001C0: 0A83     lsr r3, r0, #0xA
+000001C2: 428B     cmp r3, r1
+000001C4: D301     bcc #0x6
+000001C6: 028B     lsl r3, r1, #0xA
+000001C8: 1AC0     sub r0, r0, r3
+000001CA: 4152     adc r2, r2
+000001CC: 0A43     lsr r3, r0, #0x9
+000001CE: 428B     cmp r3, r1
+000001D0: D301     bcc #0x6
+000001D2: 024B     lsl r3, r1, #0x9
+000001D4: 1AC0     sub r0, r0, r3
+000001D6: 4152     adc r2, r2
+000001D8: 0A03     lsr r3, r0, #0x8
+000001DA: 428B     cmp r3, r1
+000001DC: D301     bcc #0x6
+000001DE: 020B     lsl r3, r1, #0x8
+000001E0: 1AC0     sub r0, r0, r3
+000001E2: 4152     adc r2, r2
+000001E4: D2CD     bcs #0xFFFFFF9E
+000001E6: 09C3     lsr r3, r0, #0x7
+000001E8: 428B     cmp r3, r1
+000001EA: D301     bcc #0x6
+000001EC: 01CB     lsl r3, r1, #0x7
+000001EE: 1AC0     sub r0, r0, r3
+000001F0: 4152     adc r2, r2
+000001F2: 0983     lsr r3, r0, #0x6
+000001F4: 428B     cmp r3, r1
+000001F6: D301     bcc #0x6
+000001F8: 018B     lsl r3, r1, #0x6
+000001FA: 1AC0     sub r0, r0, r3
+000001FC: 4152     adc r2, r2
+000001FE: 0943     lsr r3, r0, #0x5
+00000200: 428B     cmp r3, r1
+00000202: D301     bcc #0x6
+00000204: 014B     lsl r3, r1, #0x5
+00000206: 1AC0     sub r0, r0, r3
+00000208: 4152     adc r2, r2
+0000020A: 0903     lsr r3, r0, #0x4
+0000020C: 428B     cmp r3, r1
+0000020E: D301     bcc #0x6
+00000210: 010B     lsl r3, r1, #0x4
+00000212: 1AC0     sub r0, r0, r3
+00000214: 4152     adc r2, r2
+00000216: 08C3     lsr r3, r0, #0x3
+00000218: 428B     cmp r3, r1
+0000021A: D301     bcc #0x6
+0000021C: 00CB     lsl r3, r1, #0x3
+0000021E: 1AC0     sub r0, r0, r3
+00000220: 4152     adc r2, r2
+00000222: 0883     lsr r3, r0, #0x2
+00000224: 428B     cmp r3, r1
+00000226: D301     bcc #0x6
+00000228: 008B     lsl r3, r1, #0x2
+0000022A: 1AC0     sub r0, r0, r3
+0000022C: 4152     adc r2, r2
+0000022E: 0843     lsr r3, r0, #0x1
+00000230: 428B     cmp r3, r1
+00000232: D301     bcc #0x6
+00000234: 004B     lsl r3, r1, #0x1
+00000236: 1AC0     sub r0, r0, r3
+00000238: 4152     adc r2, r2
+0000023A: 1A41     sub r1, r0, r1
+0000023C: D200     bcs #0x4
+0000023E: 4601     n/a
+00000240: 4152     adc r2, r2
+00000242: 4610     n/a
+00000244: 4770     bx lr
+00000246: E7FF     b #0x2
+00000248: B501     push {r0,lr}
+0000024A: 2000     mov r0, #0x0
+0000024C: F806F000 bl #0x10
+00000250: BD02     pop {r1,pc}
+00000252: 46C0     mov r8, r8
+00000254: 2900     cmp r1, #0x0
+00000256: D0F7     beq #0xFFFFFFF2
+00000258: E776     b #0xFFFFFEF0
+0000025A: 4770     bx lr
+0000025C: 4770     bx lr
+0000025E: 46C0     mov r8, r8
+
+5 unknown instructions.
+[INFO]: Completed successfully "othercore.bin".
+[INFO]: Completed in: 703 ms
