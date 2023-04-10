@@ -31,17 +31,11 @@ class InstructionStatistics:
                 percentage = count/total_instructions * 100
                 print(f"{instruction}: {count} ({percentage:.2f}%)")
 
-# Usage example:
-stats = InstructionStatistics("out.txt")
-stats.count_instructions()
-stats.print_statistics()
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Count the frequency of ARM instructions in a binary file")
+    parser.add_argument("filename", help="the name of the file to analyze")
+    args = parser.parse_args()
 
-
-
-
-
-
-
-
-
-
+    stats = InstructionStatistics(args.filename)
+    stats.count_instructions()
+    stats.print_statistics()
